@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+// 通用手机屏幕
+$phone: 47em;
+// iphone4
+
+$iphone4-max: 320px;
+
+// iphone5
+$iphone5-min: 320px;
+$iphone5-max: 375px;
+
+// iphone6
+$iphone6-min: 375px;
+$iphone6-max: 414px;
+
+// plus
+$plus-min: 414px;
+$plus-max: 768px;
+
+// ipad  =  768~1360px
+$ipad-min: 47.063em;
+$ipad-max: 85em;
+
+// 笔记本 = 1360~1600px
+$s-pc-min: 85.063em;
+$s-pc-max: 100em;
+
+// 笔记本~1080p显示器 = 1600~1920px
+$l-pc-min: 100.063em;
+$l-pc-max: 120em;
+
+// 高分屏显示器  >  1920px
+$xl-pc: 120.063em;
+
+body {
+    background-color: rgba(146, 134, 134, 0.445);
+}
+
+
+@mixin backgroundcolor {
+    @content;
+}
+
+@mixin media_screen($devices) {
+
+    @if $devices==phone {
+        @media only screen and (max-width: $phone) {
+            @content;
+        }
+    }
+
+    @else if $devices==iphone4 {
+        @media only screen and (max-width: $iphone4-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==iphone5 {
+        @media only screen and (min-width: $iphone5-min) and (max-width: $iphone5-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==iphone6 {
+        @media only screen and (min-width: $iphone6-min) and (max-width: $iphone6-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==plus {
+        @media only screen and (min-width: $plus-min) and (max-width: $plus-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==ipad {
+        @media only screen and (min-width: $ipad-min) and (max-width: $ipad-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==s-pc {
+        @media only screen and (min-width: $s-pc-min) and (max-width: $s-pc-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==l-pc {
+        @media only screen and (min-width: $l-pc-min) and (max-width: $l-pc-max) {
+            @content;
+        }
+    }
+
+    @else if $devices==xl-pc {
+        @media only screen and (min-width: $xl-pc) {
+            @content;
+        }
+    }
+
+    // @include media_screen(iphone6) {
+    //     body {
+    //         background-color: rgba(158, 17, 17, 0.445);
+    //     }
+
+    // }
+
+}

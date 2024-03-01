@@ -1,0 +1,150 @@
+    * {
+        margin : 0;
+        padding: 0;
+    }
+
+
+    @include media_screen(iphone4) {
+        .container {
+            position   : absolute;
+            width      : 320px;
+            height     : 320px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -160px;
+            margin-top : -160px;
+        }
+
+        #video {
+            width     : 320px;
+            height    : 180px;
+            margin-top: 50px;
+        }
+    }
+
+    @include media_screen(iphone5) {
+        .container {
+            position   : absolute;
+            width      : 320px;
+            height     : 320px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -160px;
+            margin-top : -160px;
+        }
+
+        #video {
+            width     : 320px;
+            height    : 180px;
+            margin-top: 50px;
+        }
+    }
+
+    @include media_screen(iphone6) {
+        .container {
+            position   : absolute;
+            width      : 320px;
+            height     : 320px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -160px;
+            margin-top : -160px;
+        }
+
+        #video {
+            width     : 320px;
+            height    : 180px;
+            margin-top: 50px;
+        }
+
+    }
+
+    @include media_screen(plus) {
+        .container {
+            position   : absolute;
+            width      : 320px;
+            height     : 320px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -160px;
+            margin-top : -160px;
+        }
+
+        #video {
+            width     : 320px;
+            height    : 180px;
+            margin-top: 50px;
+        }
+    }
+
+    @include media_screen(ipad) {
+        .container {
+            position   : absolute;
+            width      : 600px;
+            height     : 600px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -300px;
+            margin-top : -300px;
+        }
+
+        #video {
+            width     : 640px;
+            height    : 360px;
+            margin-top: 100px;
+        }
+    }
+
+    @include media_screen(s-pc) {
+        .container {
+            position   : absolute;
+            width      : 800px;
+            height     : 800px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -400px;
+            margin-top : -400px;
+        }
+
+        #video {
+            width     : 800px;
+            height    : 450px;
+            margin-top: 150px;
+        }
+    }
+
+    @include media_screen(l-pc) {
+        .container {
+            position   : absolute;
+            width      : 800px;
+            height     : 800px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -400px;
+            margin-top : -400px;
+        }
+
+        #video {
+            width     : 800px;
+            height    : 450px;
+            margin-top: 150px;
+        }
+    }
+
+    @include media_screen(xl-pc) {
+        .container {
+            position   : absolute;
+            width      : 800px;
+            height     : 800px;
+            left       : 50%;
+            top        : 50%;
+            margin-left: -400px;
+            margin-top : -400px;
+        }
+
+        #video {
+            width     : 800px;
+            height    : 450px;
+            margin-top: 150px;
+        }
+    }
